@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* ESA Pet Brand — Teal + Dark Teal */
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+    --primary: 161 100% 32%;            /* #00a17a — teal green */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222 47% 11%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+    --accent: 192 82% 18%;              /* #094454 — dark teal */
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 161 100% 32%;
+    --radius: 0.5rem;
+
+    /* Chart colors */
+    --chart-organic: 161 100% 32%;     /* teal — brand */
+    --chart-paid: 221 90% 48%;         /* blue */
+    --chart-email: 38 92% 50%;         /* amber */
+    --chart-social: 262 83% 58%;       /* purple */
+    --chart-direct: 142 76% 36%;       /* green */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
