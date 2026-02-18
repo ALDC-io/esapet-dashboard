@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { Dashboard } from "@/components/dashboard/Dashboard";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
-import { Heart, BarChart3, Sparkles } from "lucide-react";
+import { BarChart3, Sparkles } from "lucide-react";
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState("dashboard");
@@ -13,19 +13,17 @@ export default function Home() {
       <div className="p-6">
         <Tabs className="w-full">
           <div className="flex items-center justify-between mb-6">
-            {/* ESA Pet Logo / Brand */}
+            {/* ESA Pet Logo */}
             <div className="flex items-center gap-3">
-              <div className="flex items-center justify-center w-10 h-10 rounded-xl bg-[#00a17a] shadow-lg shadow-emerald-600/20">
-                <Heart className="h-5 w-5 text-white" />
-              </div>
-              <div>
-                <h1 className="text-xl font-bold tracking-tight text-[#094454]">
-                  ESA Pet
-                </h1>
-                <p className="text-[11px] text-muted-foreground -mt-0.5">
-                  Emotional Support Animal Letters
-                </p>
-              </div>
+              <img
+                src="/esapet-logo.svg"
+                alt="ESA Pet"
+                className="h-9"
+              />
+              <div className="h-6 w-px bg-border/70" />
+              <p className="text-sm font-medium text-muted-foreground">
+                Analytics Dashboard
+              </p>
             </div>
 
             <TabsList className="grid grid-cols-2 max-w-md">
