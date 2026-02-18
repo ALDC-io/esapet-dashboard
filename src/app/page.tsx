@@ -69,12 +69,17 @@ export default function Home() {
       </div>
 
       {/* Footer */}
-      <div className="mt-auto border-t border-border/50 px-6 py-3">
-        <p className="text-xs text-muted-foreground text-center">
-          Powered by{" "}
-          <span className="font-medium text-foreground">ALDC</span>
-          {" "}&middot; Analytic Labs Data Company
-        </p>
+      <div className="mt-auto border-t border-border/50 px-6 py-4">
+        <div className="flex items-center justify-center gap-2">
+          <span className="text-xs text-muted-foreground">Powered by</span>
+          <img
+            src="/aldc-icon.svg"
+            alt="ALDC"
+            className="h-5 w-5"
+          />
+          <span className="text-xs font-medium text-foreground">ALDC</span>
+          <span className="text-xs text-muted-foreground">&middot; Analytic Labs Data Company</span>
+        </div>
       </div>
     </main>
   );
